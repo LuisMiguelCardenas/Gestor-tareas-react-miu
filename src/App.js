@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import TasksContainer from './components/TasksContainer'
+import { Box, Container, Grid } from '@material-ui/core';
+
+
 
 function App() {
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="rutinas-seguimiento-page">
+      <Container maxWidth="xl">
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <h1>Rutinas de seguimiento</h1>
+          </Grid>
+          <Grid item xs={3}>
+            <TasksContainer/>
+          </Grid>
+          <Grid item xs={9}>
+            Calendario 
+          </Grid>
+        </Grid>
+      </Container>
     </div>
+
+
   );
 }
 

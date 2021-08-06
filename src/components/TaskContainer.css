@@ -1,0 +1,13 @@
+.Tareas{
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: #f6fafc;
+    box-shadow: 0 0 5px #b9cdd3;
+    border-radius: 0.5rem;
+}
+.titleModule{
+    color: #2375c7
+}
